@@ -1,0 +1,11 @@
+name: Always Success
+
+on:
+  workflow_dispatch:
+
+jobs:
+  always_succeeds:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report Success
+        run: echo "This job has successfully completed!"
